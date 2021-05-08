@@ -1,0 +1,69 @@
+
+// Hero Banner Background Image
+.bg-img { 
+  // background-image: url(https://images.unsplash.com/photo-1598262721485-a3825ae2a7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80) ;
+  // background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1598262721485-a3825ae2a7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80');
+  // background-position: center center;
+  // background-repeat:  no-repeat;
+  // background-attachment: fixed;
+  // background-size:  cover;
+  // background-color: #999;
+  
+  height: 66vw;
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1598262721485-a3825ae2a7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80) no-repeat;
+  // background: url(https://static01.nyt.com/newsgraphics/2018/01/25/korea-history/644b60d…/OLYMPIC_TORCH_BEARER_SEOUL_new.jpg) no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+  max-height: 100vh;
+
+}
+
+.bg-color {
+  border: 1px solid red;
+  background-color: #999;
+}
+
+.svg-end {
+  display: block;
+  height: 0;
+}
+
+/* Styles for the SVG chart */
+.svg-wrapper {
+  z-index: -1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+// Variables
+$roboto: 'Roboto',
+Helvetica,
+Arial,
+sans-serif;
+
+$lora: 'Lora',
+serif;
+
+$coolors-1: #E00000;
+$coolors-2: #1200C4;
+$coolors-3: #F6AE2D;
+$coolors-4: #FDFFFC;
+$coolors-5: #090C02;
+
+
+/* Body */
+
+// body {
+//   background-color: $coolors-4;
+// }
+
+// h1,h2,h3,h4,h5,h6 {
+//   // color: $coolors-5;
+//   font-family: $lora;
+// }
+
+// p {
+//   color: $coolors-5;
+//   // font-family: $roboto;
+// }

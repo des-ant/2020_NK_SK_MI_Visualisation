@@ -1,35 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- CSS files -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>DECO3100 A2</title>
-
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/regression/2.0.1/regression.min.js'></script>
 </head>
-<body>
-  
-  <article class="graph">
-    <div id="myPlot"></div>
-    <div id="myDiv"></div>
-  </article>
 
-  <div class="showcase__section" id="bubble">
-    <div class="spacer --small"></div>
-    <div id="bubbleplots">
-      <div class="bubbleplot" data-num="0">
-        <div class="plot" id="plotdiv"></div>
-        <div class="control-row">
-          Country: <select class="countrydata">
-          </select>
+<body>
+
+  <!-- Main Content-->
+  <main>
+    <article>
+      <section class="hero bg-img is-large">
+        <div class="hero-body columns">
+          <div class="container column is-half-desktop is-offset-one-quarter has-text-centered">
+            <h1 class="title has-text-white is-size-1-desktop pb-3">
+              North Korea and South Korea:<br> Over 70 years divided
+            </h1>
+            <p class="subtitle has-text-white is-size-3-desktop">
+              How the two countries diverged economically, politically and culturally
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section columns">
+        <div class="column is-4-desktop is-offset-4">
+          <h1 class="title">In Summary</h1>
+          <p>
+            North Korea and South Korea started out as poor nations after World War II. Today South Korea’s economy and standard of living rank amongst the highest in the world whereas North Korea remains at the bottom of the world’s development ladder (Ellington
+            & Ferrarini, 2017).
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <h1 class="title">The Origins</h1>
+            <p>
+              The division of Korea began at the end of World War II in 1945 with the occupation of Korea by the Allied forces that defeated Japan (Lee, 2006). The Soviet troops took over Korea north of the 38th parallel and the US troops occupied the regions south
+              of this dividing line (Lee, 2006; Nash, 2008).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter">
+            <figure class="image svg-wrapper" id="svg-1-1">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Korea_DMZ.svg/1200px-Korea_DMZ.svg.png">
+            </figure>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <div class="content">
+              <p>
+                In 1948, the 38th parallel became the boundary between Democratic People's Republic of Korea (North Korea), led by Kim Il-sung and the Republic of Korea (South Korea) led by Syngman Rhee (Lee, 2006; Nash, 2008).
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <p>
+              In 1950, after years of mutual hostility, the North Korea Army crossed the parallel and invaded South Korea in an attempt to re-unify the peninsula under its communist rule (Lee, 2006; Nash, 2008). The subsequent Korean War ended in 1953 with a stalemate,
+              establishing the Korean Demilitarized Zone (DMZ) that separated North and South Korea up to the present day (Lee, 2006; Nash, 2008).
+            </p>
+          </div>
+        </div>
+        <div class="svg-end" id="svg-end-1-1"></div>
+      </section>
+      <section class="section">
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <h1 class="title">South Korea After The War</h1>
+            <p>
+              In the decade after the Korean War, South Korea struggled to climb up the world’s development ladder (Ellington & Ferrarini, 2017). Disgusted by the dysfunctional economy and the Rhee administration’s corruption, a student-led revolution ousted Rhee,
+              leading to a new “democratic” constitution and government (Ellington & Ferrarini, 2017).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter">
+            <figure class="image">
+              <img src="img/april_protest.jpeg">
+            </figure>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <p>
+              Economic conditions did not improve and the government was overthrown in 1961 by General Park Chung-hee’s military coup d’état (Ellington & Ferrarini, 2017).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter">
+            <figure class="image">
+              <img src="img/coup_park.jpg">
+            </figure>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <p>
+              In the 1960s, international trade played a key role in South Korea’s rapidly expanding economy, earning the title of “Asian tiger” (Ellington & Ferrarini, 2017). The Park regime abandoned import substitution policies, permitting the importation of goods,
+              services and resources that were otherwise in short supply (Ellington & Ferrarini, 2017). South Korea was also producing and exporting garments, textiles, shipbuilding, electronics, chemicals, metal, and iron (Ellington & Ferrarini, 2017).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <p>
+              The chaebol, meaning “rich family” in Korean, were family-run conglomerates financed by the government as a way to fast-track economic development (Pae, 2019). Five of these companies (LG, Hyundai, SK, Lotte, Samsung) now own half of the South Korean
+              market share.
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter">
+            <figure>
+              <div id="chaebol"></div>
+            </figure>
+          </div>
+        </div>
+        <div class="column is-4-desktop is-offset-4">
+          <p>
+            In the 1980s, deregulation in trade and financial sectors drove focus away from chaebol industries, and led to less central government involvement allowing more business diversification (Shin, as cited in Ellington & Ferrarini, 2017). The economy rebounded
+            and South Korea emerged as a world leader in the high tech industry (Ellington & Ferrarini, 2017).
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <h1 class="title">North Korea After The War</h1>
+            <p>
+              North Korea outperformed South Korea for eight years after the Korean war. (Ellington & Ferrarini, 2017). With access to mineral resources, and aid from China and the Soviet Union, the highly rigid dictatorship of the North was able to grow the economy
+              (Ellington & Ferrarini, 2017).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <p>
+              Since 1948, the North Korean regime has adhered to a centrally planned economic system and the doctrine of Juche, meaning self-reliance (Ellington & Ferrarini, 2017). For the past few decades, the regime has prioritised military spending and aggressively developing nuclear weapons and missiles (McCafferty, as cited in Ellington & Ferrarini, 2017).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter">
+            <figure>
+              <div id="military"></div>
+            </figure>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <p>
+              The North Korean economy is tightly controlled by its government, with production and international trade strictly limited to that permitted by the government and denied to the general populace (Ellington & Ferrarini, 2017).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-4-desktop is-offset-4">
+            <p>
+              In the early 1990s, the fall of the Soviet Union, the reduction in aid and exports from China, and long term central planning mistakes led to economic recession (Ellington & Ferrarini, 2017). This resulted in a man-made famine that killed up to one million people (West & Johnson, as cited in Ellington & Ferrarini, 2017).
+            </p>
+          </div>
+        </div>
+        <div class="columns">
+          <div class="column is-half-desktop is-offset-one-quarter">
+            <figure class="image">
+              <div id="gdpChart"></div>
+            </figure>
+          </div>
+        </div>
+      </section>
+      <div class="columns">
+        <div class="column is-half-desktop is-offset-one-quarter">
+          <figure class="image">
+            <div id="gdpChart"></div>
+          </figure>
         </div>
       </div>
-    </div>
-  </div>
 
-  <script src="script.js"></script>
+    </article>
+  </main>
+
+
+  <!-- Required imported script files -->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/regression/2.0.1/regression.min.js'></script>
+  <script src="js/graphs.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollToPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+
 </body>
+
 </html>
