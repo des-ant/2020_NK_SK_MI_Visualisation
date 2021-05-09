@@ -1,6 +1,5 @@
-
 // Hero Banner Background Image
-.bg-img { 
+.bg-img {
   // background-image: url(https://images.unsplash.com/photo-1598262721485-a3825ae2a7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80) ;
   // background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://images.unsplash.com/photo-1598262721485-a3825ae2a7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80');
   // background-position: center center;
@@ -8,9 +7,9 @@
   // background-attachment: fixed;
   // background-size:  cover;
   // background-color: #999;
-  
+
   height: 66vw;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://images.unsplash.com/photo-1598262721485-a3825ae2a7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1598262721485-a3825ae2a7d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80) no-repeat;
   // background: url(https://static01.nyt.com/newsgraphics/2018/01/25/korea-history/644b60d…/OLYMPIC_TORCH_BEARER_SEOUL_new.jpg) no-repeat;
   background-position: top center;
   background-size: 100% auto;
@@ -23,6 +22,11 @@
   background-color: #999;
 }
 
+// Text to cover height of page
+.page-height {
+  min-height: 75vh;
+}
+
 .svg-end {
   display: block;
   height: 0;
@@ -31,6 +35,12 @@
 /* Styles for the SVG chart */
 .svg-wrapper {
   z-index: -1;
+}
+
+#svg-1,
+#svg-2,
+#svg-3 {
+  height: 75vh;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300&display=swap');
