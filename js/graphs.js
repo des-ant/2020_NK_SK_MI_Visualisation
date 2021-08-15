@@ -9,7 +9,7 @@ function stretch(n, start1, stop1, start2, stop2) {
 };
 
 const gdpChart = document.getElementById('gdpChart');
-const gdpSource = "/data/gdp.csv";
+const gdpSource = "https://raw.githubusercontent.com/des-ant/2020_NK_SK_MI_Visualisation/main/data/gdp.csv";
 
 function make_gdp(csv_data) {
 
@@ -175,7 +175,7 @@ makeMilitaryBar(military);
 */
 
 const mortalityChart = document.getElementById('mortality');
-const mortalitySource = "/data/mortality.csv";
+const mortalitySource = "https://raw.githubusercontent.com/des-ant/2020_NK_SK_MI_Visualisation/main/data/mortality.csv";
 
 function make_mortality(csv_data) {
 
